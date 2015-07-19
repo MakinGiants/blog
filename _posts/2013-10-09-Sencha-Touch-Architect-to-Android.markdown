@@ -1,0 +1,9 @@
+---
+title: Sencha Touch Architect to Android 
+layout: post
+date: 2013-10-09 13:24:00 UTC
+updated: 2015-02-08 19:42:29 UTC
+comments: false
+categories: Extjs Sencha Architect
+---
+I you have Sencha Architect&nbsp;<span style="background-color: #f2f2f2; color: #595959; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Segoe, Tahoma, sans-serif; font-size: 12px; line-height: 15.59375px;">2.2.3 Build: 1039&nbsp;</span>then you cant package the Sencha app to <i>".apk"</i> with it, you need to run:<br /><blockquote class="tr_bq"><i>$sencha app build native</i></blockquote>and it will create the <i>".apk "</i><br /><span style="font-size: large;"><br /></span><span style="font-size: x-large;"><b>Solution to posible errors:</b></span><br /><span style="font-size: large;"><br /></span><span style="font-size: large;">Copy operation failed &nbsp;'src=st-res/android//nimblekit.jar' Sencha Architect Touch to apk Android</span><br /><br /><ol><li>Give permissions to folder .sencha:</li></ol><blockquote class="tr_bq"><i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$sudo chmod -R +rwx /home/&lt;user&gt;/bin/Sencha/Cmd/repo/.sencha/</i></blockquote><ol><li>Copy the folder "<i>st-res</i>" from <i>/home/&lt;user&gt;/bin/Sencha/Cmd/&lt;cmd-version&gt;/stbuild/st- </i>inside of your project folder.</li></ol><div><br /></div><div><span style="font-size: large;">Ant&nbsp;</span></div><div><br /></div><div>Install ant in your machine:</div><blockquote class="tr_bq"><i>apt-get install ant</i></blockquote><div><br /></div><div><span style="font-size: large;">PNG Error</span></div><div><br /></div><div>Check images sizes and name.</div><div>A project have by default iOS images and sizes so android will die if you try to generate an apk with those icon sizes...&nbsp;</div><div><br /><br /><div><span style="font-size: large;">Compass&nbsp;</span></div><div><br /></div><div>Install rubygems and compass from gems.</div></div>

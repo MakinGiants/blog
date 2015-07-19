@@ -1,0 +1,9 @@
+---
+title: Automatic align CCMenu with alignItemsInColumns in Cocos2D
+layout: post
+date: 2012-11-15 00:06:00 UTC
+updated: 2015-02-08 19:42:31 UTC
+comments: false
+categories: Cocos 2D IOS
+---
+<br /><span class="Apple-style-span" style="font-size: large;">Introduction</span><br /><br />CCMenu have alignItemsInColumns that organize items based on number of rows and columns.<br /><br /><i><u>Note: this number must be the same as the number of elements or you will get an exception:</u></i><br /><blockquote><span style="font-style: italic;">'NSInternalInconsistencyException', reason: 'Too many menu items for the amount of rows/columns.'</span></blockquote><br /><span class="Apple-style-span" style="font-size: large;">Example:</span><br /><br />Create menu with 5 elements, into 2 columns and 3 rows:<br /><br /><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> //Init menu with items  <br /> CCMenu* menú = [CCMenu menuWithItems: item1, item2, item3, item4 nil];   <br /> //you can add items after init with   <br /> //[menu addChild:item5];  <br /> //Setup automatic align  <br /> [menu alignItemsInColumns: [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:1],nil];  <br /></code></pre><br />About alignItemsInColumns:<br /><br /><ul><li>It have 3 NSNumber parameters so it have 3 rows.</li><li>Each parameter contain the number of columns for each row.</li></ul><br />Result:<br /><blockquote><div style="text-align: center;">Item1 Item2</div><div style="text-align: center;">Item3 Item4</div><div style="text-align: center;">Item5</div></blockquote>

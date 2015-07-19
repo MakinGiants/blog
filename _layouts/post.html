@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <div class="post">
   {% if page.image %}
@@ -11,6 +12,23 @@ layout: default
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
   
   {{ content }}
+
+  <!-- DISQUS -->
+  {% if page.comments %}
+    <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          var disqus_shortname = 'makingiants';
+          
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript/>
+    </div>
+  {% endif %}
 
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">

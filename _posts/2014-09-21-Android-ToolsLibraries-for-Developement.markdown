@@ -1,0 +1,9 @@
+---
+title: Android Tools/Libraries for Developement
+layout: post
+date: 2014-09-21 14:03:00 UTC
+updated: 2015-02-08 19:42:28 UTC
+comments: false
+categories: Android
+---
+<h3>Development</h3><ul><li>LogCat Colors: <a href="https://github.com/JakeWharton/pidcat/">https://github.com/JakeWharton/pidcat/</a></li></ul><blockquote class="tr_bq">brew install pidcat</blockquote><ul><li>Dagger Dependency Injection:</li></ul><blockquote class="tr_bq">compile 'com.squareup.dagger:dagger:1.2.2'</blockquote><blockquote class="tr_bq">provided 'com.squareup.dagger:dagger-compiler:1.2.2'</blockquote><ul><li>ButterKnife View Injector</li></ul><blockquote class="tr_bq">&nbsp;compile 'com.jakewharton:butterknife:5.1.2'</blockquote><ul><li>Timber Log:&nbsp;<a href="https://github.com/JakeWharton/timber">https://github.com/JakeWharton/timber</a></li></ul><blockquote class="tr_bq">compile 'com.jakewharton.timber:timber:2.4.1'</blockquote><ul><li>Easy Async Http requests:</li></ul><blockquote class="tr_bq">compile 'com.loopj.android:android-async-http:1.4.5'</blockquote><ul><li>Lazy Image loading:&nbsp;</li></ul><blockquote class="tr_bq">compile 'com.squareup.picasso:picasso:2.3.4'</blockquote><ul><li>Json class serializer:</li></ul><blockquote class="tr_bq">compile 'com.google.code.gson:gson:2.2.4'</blockquote><ul><li>Cool smooth progress bar animated:</li></ul><blockquote class="tr_bq">compile 'com.github.castorflex.smoothprogressbar:library:1.0.0</blockquote><div><br /><h3>Publish</h3><br /><ul><li>Clear the status bar</li></ul><br /><blockquote class="tr_bq">https://play.google.com/store/apps/details?id=com.emmaguy.cleanstatusbar</blockquote><br /><br /><br /></div>

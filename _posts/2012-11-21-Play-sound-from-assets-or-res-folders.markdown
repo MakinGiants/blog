@@ -1,0 +1,9 @@
+---
+title: Play sound from assets or res folders
+layout: post
+date: 2012-11-21 12:39:00 UTC
+updated: 2015-02-08 19:42:30 UTC
+comments: false
+categories: Android Blackberry Android Port
+---
+<h3>Play from assets folder</h3><div><span style="color: red;">This is the best way...</span></div><div><br /></div><div>Pros:</div><div>- Can create folders inside and&nbsp;and organize your projects files</div><div>- File name can contain spaces and others chars that are not allowed in res folder.</div><br /><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> AssetFileDescriptor afd = context.getAssets().openFd("folder/sound.mp3");  <br /> MediaPlayer player = new MediaPlayer();  <br /> player.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());  <br /> player.prepare();  <br /> player.start();  </code></pre><h3>Play from /res/raw</h3><div>You need to use the id for the sound&nbsp;auto-generated&nbsp;in R:</div><div><br /></div><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> MediaPlayer player = MediaPlayer.create(this, R.raw.sound);  <br /> player.start();  <br /></code></pre>

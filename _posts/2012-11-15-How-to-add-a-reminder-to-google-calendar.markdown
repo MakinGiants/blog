@@ -1,0 +1,9 @@
+---
+title: How to add a reminder to google calendar
+layout: post
+date: 2012-11-15 00:42:00 UTC
+updated: 2015-02-08 19:42:31 UTC
+comments: false
+categories: Android
+---
+You can use the next method:<br /><br /><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> public static void add(Activity activity, String title, String description, Calendar initDate, Calendar finalDate) {  <br />      final String baseUriCalendar = getCalendarUriBase();  <br />      final Uri EVENTS_URI = Uri.parse(baseUriCalendar + "//events");  <br />      final ContentResolver cr = activity.getContentResolver();  <br />      // event insert  <br />      ContentValues values = new ContentValues();  <br />      values.put("calendar_id", 1);values.put("title", title);  <br />      values.put("allDay", 0);  <br />      values.put("dtstart", initDate.getTimeInMillis());  <br />      values.put("dtend", finalDate.getTimeInMillis());  <br />      values.put("description", description);values.put("visibility", 0);  <br />      values.put("hasAlarm", 1);  <br />      final Uri event = cr.insert(EVENTS_URI, values);// reminder insert  <br />      final Uri REMINDERS_URI = Uri.parse(baseUriCalendar + "//reminders");  <br />      values = new ContentValues();  <br />      values.put("event_id", Long.parseLong(event.getLastPathSegment()));  <br />      values.put("method", 1);  <br />      values.put("minutes", 10);  <br />      cr.insert(REMINDERS_URI, values);  <br /> }  <br /></code></pre>

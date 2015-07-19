@@ -3,7 +3,8 @@ require "normalize-scss"
 require "susy"
 
 # Set this to the root of your project when deployed:
-http_path = "/long-haul/" 
+http_path = "/blog"
+
 css_dir = "assets/css"
 sass_dir = "assets/scss"
 images_dir = "assets/img"

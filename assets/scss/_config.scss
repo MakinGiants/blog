@@ -24,14 +24,19 @@ $silver: #ddd;
 $grey:   #aaa;
 $black:  #111;
 
+// Material Colors
+$mat_blue_500: #2196F3;
+$mat_blue_700: #1976D2;
+$mat_blue_900: #0D47A1;
+
 // Color variables
-$primary-color: seagreen;
-$secondary-color: #233E5B;
-$tertiary-color: #aaa;
+$primary-color: $mat_blue_500;
+$secondary-color: $mat_blue_500;
+$tertiary-color: $mat_blue_900;
 $link-color: $primary-color;
 
 $bad-color: $red; // Bad color for errors, validation etc.
-$good-color: $green; // Good color for success etc.
+$good-color: $primary-color; // Good color for success etc.
 $info-color: $blue; // Good color for success etc.
 $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text

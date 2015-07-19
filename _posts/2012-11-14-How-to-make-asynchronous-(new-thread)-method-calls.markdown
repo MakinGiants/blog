@@ -1,0 +1,9 @@
+---
+title: How to make asynchronous (new thread) method calls
+layout: post
+date: 2012-11-14 23:05:00 UTC
+updated: 2015-02-08 19:42:31 UTC
+comments: false
+categories: IOS
+---
+<br /><h3><span style="font-size: large;">First way (NSOperationQueue):</span></h3><pre style="background-color: #f0f0f0; border: 1px dashed rgb(204, 204, 204); font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; width: 646.4666748046875px;"><code style="word-wrap: normal;"> NSOperationQueue *q = [[NSOperationQueue alloc] init];  <br /> [q addOperationWithBlock:^{   <br />    //Do Things  <br /> }];  <br /> [q release];  </code></pre><h3><span style="font-size: large;">Second way:</span></h3><pre style="background-color: #f0f0f0; border: 1px dashed rgb(204, 204, 204); font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; width: 646.4666748046875px;"><code style="word-wrap: normal;"> [self performSelectorInBackground:@selector(func1:) withObject:nil];  </code></pre><br /><h3><span style="font-size: large;">Third way (Schedule with timer):</span></h3><pre style="background-color: #f0f0f0; border: 1px dashed rgb(204, 204, 204); font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; width: 646.4666748046875px;"><code style="word-wrap: normal;"> [NSTimer scheduledTimerWithTimeInterval:1.0 target:self   <br />  selector:@selector( methodName: )  <br />  userInfo:parameter repeats:NO];  </code></pre><br /><a href="http://stackoverflow.com/questions/10427140/call-a-function-using-thread-in-xcode">Source</a><br /><br /><h3><span style="font-size: x-large;"><i>Notes</i></span></h3>If you want to run code in the main thread from other thread (like GUI updates or another...) see<br /><a href="http://www.makingiants.com/2012/11/run-code-in-main-thread-from-other.html">Run code in main thread from other</a>
