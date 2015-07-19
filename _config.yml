@@ -1,8 +1,8 @@
 title: MakinGIANTS
 description: Compilation of projects and code made for fun!
 
-url: http://www.makingiants.com/
-baseurl: ""
+url: http://www.makingiants.com/blog
+baseurl: "/blog"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -19,7 +19,6 @@ navigation:
    url: /awesome_mobile
 
 gems:
- - emoji_for_jekyll
  - jekyll-compass
  - jekyll-gist
 
