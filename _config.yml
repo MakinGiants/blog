@@ -12,9 +12,7 @@ paginate: 5
 
 navigation:
  - title: Home
-   url: /index.html
- - title: Our Android Apps
-   url: https://play.google.com/store/search?q=makingiants
+   url: http://www.makingiants.com
  - title: Awesome Mobile
    url: /awesome_mobile
 
@@ -25,7 +23,7 @@ gems:
 
 social:
    github: makingiants
-   twitter: danielgomezrico
+   twitter: dgomezri
    #facebook:
    email: danielgomezrico@gmail.com
 

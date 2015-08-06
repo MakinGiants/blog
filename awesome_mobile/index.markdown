@@ -7,24 +7,8 @@ comments: false
 categories: Android iOS
 ---
 
-[Awesome Mobile](http://makinginats.com/awesome_mobile)
+[Awesome Mobile](http://danielgomezrico.github.io/Awesome-Mobile)
 ==================
-
-# How To Contribute
-1. Fork this repo.
-1. Edit your README.md file adding the new item in the category (create one if don´t fit) with format:
-* `[name](link)`: `description`.
-1. Pull request with format:
-* title: `:<type>: [name](link) --> <title>` Commit comments are composed by: `type` `<empty_space>` `message`.
-
-Types:
-- :muscle: `muscle` : UPDATE
-- :neckbeard: `neckbeard` : ADD 
-- :shipit: `shipit` : REMOVE
-- :clap:: `clap` : FIX
-- :umbrella: `umbrella` : CLEAN
-
-* comment:`[name](link)` 
 
 # General 
 
@@ -33,7 +17,7 @@ Types:
 # Android
 
 ## Tools
-* [Shrink images](http://optimizilla.com/): Make your assets smaller.
+* [Image optim](https://imageoptim.com/es.html): Make your assets smaller. `#brew cask install imageoptim`
 * [Density Converter](http://density.brdrck.me/): helps to see values for each density.
 * [Android Asset Studio](http://romannurik.github.io/AndroidAssetStudio/): Assets management.
 * [Material Palette](http://www.materialpalette.com/): helps to define colors on material design interfaces.
@@ -59,6 +43,7 @@ Types:
 * [Codepath Android Wiki](https://github.com/codepath/android_guides)
 
 ## Courses
+* [Google Analytics for Mobile apps - Google FREE](https://analyticsacademy.withgoogle.com/course04/)
 * [New android nanodegree - Google](https://www.udacity.com/course/android-developer-nanodegree--nd801)
 * [New Circle Courses](https://newcircle.com/category/android)
 * [Udemy - Android Lollipop complete development](https://www.udemy.com/android-lollipop-complete-development-course/#/)
@@ -83,6 +68,8 @@ Types:
 * [The big nerd ranch guide](https://www.bignerdranch.com/we-write/android-programming/)
 * [JavaRX Essentials](http://www.amazon.com/gp/product/1784399108)
 * [Async Android](http://www.amazon.com/Asynchronous-Android-Steve-Liles/dp/1783286873/ref=sr_1_15%7D)
+* [Retrofit love working with apis on android](https://leanpub.com/retrofit-love-working-with-apis-on-android)
+* [Hands on mobile app testing - a guide for mobile testers](http://www.informit.com/store/hands-on-mobile-app-testing-a-guide-for-mobile-testers-9780134191713)
 
 ## Cool posts
 * [Install Google Apps into Genymotion Emulator](https://gist.github.com/wbroek/9321145)
@@ -99,7 +86,9 @@ Types:
 * [Activity launch modes](http://inthecheesefactory.com/blog/understand-android-activity-launchmode/en)
 * [AutocompleteTextView examples (including address autocomplete)](http://android.foxykeep.com/dev/how-to-add-autocompletion-to-an-edittext)
 * [Elminating code overhead - Square 2015](https://speakerdeck.com/jakewharton/eliminating-code-overhead-square-hq-2015)
-
+* [Espresso 2.0 presentation](https://docs.google.com/presentation/d/1EtFKPluGiuxZcr4W_cAziEY_--wbY_1otw44XEBv7JA/edit#slide=id.g98a986571_0_184)
+* [6 Things I wish I knew before I wrote my first app](http://www.philosophicalhacker.com/2015/07/09/6-things-i-wish-i-knew-before-i-wrote-my-first-android-app/?utm_source=Android+Weekly&utm_campaign=5303dcddb7-Android_Weekly_161&utm_medium=email&utm_term=0_4eb677ad19-5303dcddb7-337918009)
+* [Android performance - Omertsimsek](http://www.slideshare.net/omertsimsek/andromance-android-performance-devfest-ankara-2013?qid=7c54c68a-2d60-44ce-b4c8-d5bff3477727&v=qf1&b&from_search=8)
 
 ## Apps for developers
 * [Android - Material](https://play.google.com/store/apps/details?id=fr.hozakan.materialdesigncolorpalette)
@@ -141,10 +130,11 @@ Types:
 * https://github.com/matteocrippa/awesome-swift
 * https://github.com/vsouza/awesome-ios
 
+## Conferences 
+* [Pragma Conference](http://www.pragmaconference.com/)
 
 ## Tips
 * [Screen mirror iOS](http://pro.itools.cn/airplayer): wireless.
-
 
 ## Versions Stats
 1. [iOS](https://developer.apple.com/support/appstore/)
