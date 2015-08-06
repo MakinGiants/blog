@@ -6,4 +6,33 @@ updated: 2015-02-08 19:42:29 UTC
 comments: false
 categories: MAC OSX SSD
 ---
-<br />You will need:<br /><br /><ul><li>SSD drive:&nbsp;OCZ Technology 256GB Vertex 4 Series SATA</li><li>USB Memory for Mac Recovery.</li><li>USB Memory for Firmware updater.</li><li>Two screwdriver tools to remove the old HD and replace with the new one. (the screwdriver that you use to remove the bottom face of the macbook pro is not the same that you use to remove a protector that keep HD in the same position...)</li></ul><br />Now:<br /><br /><ol><li>Create the recovery with&nbsp;<a href="http://support.apple.com/kb/DL1433">OSX Recovery Disk Assitant</a>&nbsp;into one SD</li><li>Create the Firmware Updater with:&nbsp;<a href="http://www.coolestguyplanettech.com/make-a-bootable-usb-drive-of-os-x-10-8-mountain-lion-using-the-recovery-partition/">Source for ceating an SD Recovery partition booteable</a></li><li>Remove the battery charger to avoid problems.</li><li>Change your HD with your SSD. <a href="http://www.youtube.com/watch?v=cfiGF_pjqvM">Instructions</a></li><li>Connect your USB with the firmware booteable updater and start your mac pressing key 'alt'.</li><ol><li>Select EFI image</li><li>Select your SSD</li><li>Select Update</li><li>Select poweroff and the mac will shutdown.</li></ol><li>Disconnect last USB and connect the USB with Mac Recovery and start your mac pressing 'alt' + 'r'.</li><ol><li>Select disk utility, select your SSD and format it with MAC OS Journalled format.</li><li>Close and select install MAC OS, select your disk.</li></ol></ol><div>Start using your new fast SSD drive :)</div><div><br /></div><div>All the steps are proved by me and they works for me...</div>
+
+You will need:
+
+* SSD drive:OCZ Technology 256GB Vertex 4 Series SATA
+
+* USB Memory for Mac Recovery.
+
+* USB Memory for Firmware updater.
+
+* Two screwdriver tools to remove the old HD and replace with the new one. (the screwdriver that you use to remove the bottom face of the macbook pro is not the same that you use to remove a protector that keep HD in the same position...)
+
+
+Now:
+*Remove the battery charger to avoid problems*
+
+* Create the recovery with [OSX Recovery Disk Assitant](http://support.apple.com/kb/DL1433) into one SD.
+
+* Change your HD with your SSD. [Youtube Instructions](http://www.youtube.com/watch?v=cfiGF_pjqvM)
+
+* Select poweroff and the mac will shutdown.
+
+* Disconnect last USB and connect the USB with Mac Recovery and start your mac pressing 'alt' + 'r'.
+
+* Select disk utility, select your SSD and format it with MAC OS Journalled format.
+
+* Close and select install MAC OS, select your disk.
+
+Start using your new fast SSD drive :)
+
+All the steps are proved by me and they works for me...
