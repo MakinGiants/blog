@@ -12,7 +12,9 @@ paginate: 5
 
 navigation:
  - title: Home
-   url: http://www.makingiants.com
+   absolute_url: http://www.makingiants.com
+ - title: Blog
+   url: /
  - title: Awesome Mobile
    url: /awesome_mobile
 
