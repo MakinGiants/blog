@@ -28,7 +28,7 @@ Oficial JUnit tags are not supported so you need to format names with:
 
 Example:
 
-{% highlight android %}
+{% highlight java %}
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class LoginActivityTests {
