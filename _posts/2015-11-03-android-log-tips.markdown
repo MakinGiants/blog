@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Android Log Tips"
+title: "Android Log Tips - Timber"
 date: "2015-11-03"
 categories: Android
 ---
+
+Use [timber](https://github.com/JakeWharton/timber) You can create a custom tree for releases so you can send logs to Crashlytics or other thing without changing any line of code.
 
 # Why
 
