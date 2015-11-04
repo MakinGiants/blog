@@ -1,20 +1,21 @@
 ---
-title: Android Log's with Timber
 layout: post
-date: 2015-3-11 03:56:00 UTC
+title: "Android Log Tips"
+date: "2015-11-03"
 categories: Android
 ---
 
-# Why 
+# Why
 
 - Simple
+
 {% highlight java %}
 Timber.d("Log")
 Timber.d("With some format %s and this number: %d", someString, someNumber)
 Timber.e(throwable, "message")
 {% endhighlight %}
 
-- Easy setup 
+- Easy setup
 
 It will print the class name as tag and number with this setup:
 
@@ -23,7 +24,6 @@ It will print the class name as tag and number with this setup:
 - Helps in prodution release, you can set up to send all logs into crashlytics reports so you can see what was happening on users phones in this way:
 
 {% gist danielgomezrico/18268c9963936a4e44f7 %}
-
 
 # Sources
 
