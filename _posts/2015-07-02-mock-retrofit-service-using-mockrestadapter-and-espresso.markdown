@@ -2,8 +2,11 @@
 layout: post
 title: "Mock Retrofit service using MockRestAdapter and Espresso 2.0 (No Mockito)"
 date: "2015-07-02"
+
 categories: Android Espresso Retrofit
 ---
+
+*Note:* **DON'T DO THIS!** check the end of the post to know why.
 
 I will not use mockito because it give me so much errors, when we will use
 
@@ -156,3 +159,12 @@ public class SomeActivityTests {
 {% endhighlight %}
 
 Thansk to Retrofit guys for everything!.
+
+# EDIT
+
+If you end trying to do something like this maybe you have a ~~terrible~~ not testeable code structure, so please don't do it. It will be hard to change and really really hard to understand.
+
+At the end I removed every espresso test and start using MVP in all the project,
+then I can run my tests just on JVM (Yeah, no more android emulator).
+
+Check Mockito or Powermock for mocking the api responses, and if you try and you can't again is posible that you have a terrible code structure.
