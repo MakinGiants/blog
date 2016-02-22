@@ -20,7 +20,7 @@ GEM
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
-    jekyll (3.1.1)
+    jekyll (3.1.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -77,6 +77,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-paginate
   normalize-scss
+  rouge
   susy
 
 BUNDLED WITH

@@ -6,19 +6,26 @@ categories: Android Programming
 
 Dependencies:
 
-```
-compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.0"
+``` groovy
 
-testCompile 'junit:junit:4.12'
-testCompile 'org.mockito:mockito-core:2.0.42-beta'
-testCompile('com.squareup.assertj:assertj-android:1.1.1') {
-    exclude group: 'com.android.support', module: 'support-annotations'
+// Android stuff...
+
+dependencies {
+    //...
+    compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.0"
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.0.42-beta'
+    testCompile('com.squareup.assertj:assertj-android:1.1.1') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
 }
+
 ```
 
 # Little Notes
-- * USE OPEN PROP/FUNC *: all the functions AND PROPERTIES should be open, by default functions and properties are final and mockito cant mock them.
-- *DONT USE* spy functions make tests fail bc of some weird crash *(if someone had use them right comment!!)*.
+* All the functions AND PROPERTIES should be open, by default functions and properties are final and mockito cant mock them.
+* **DONT USE** spy functions make tests fail bc of some weird crash *(if someone had use them right comment!!)*.
 
 # Example
 
@@ -31,6 +38,7 @@ We will show:
 You may have a class `Settings`: 
 
 ```
+
 open class Settings(context: Context) {
     val localCache = LocalCache(context)
 
@@ -38,10 +46,13 @@ open class Settings(context: Context) {
         get() = localCache.get("headphones", false)
         set(value) = localCache.put("headphones", value)
 }
+
 ```
 
 Then a presenter that use those settings:
+
 ```
+
 class SettingsPresenter {
     private var mSettings: Settings? = null
     private var mView: SettingsView? = null
@@ -53,16 +64,16 @@ class SettingsPresenter {
         view.setHeadphonesToggleCheck(settings.playJustWithHeadphones)
     }
 }
+
 ```
 
 
-Check that:
-- Mocked Settings class *is open*
-- Mocked var property *is open*
+Check that mocked Settings class **is open** and mocked var property **is open**
 
 Then the tests passing:
 
 ```
+
 class SettingsPresenterTests {
     @Mock lateinit var mockedView: SettingsView
     @Mock lateinit var mockedSettings: Settings
@@ -82,8 +93,9 @@ class SettingsPresenterTests {
         Mockito.verify(mockedView).setHeadphonesToggleCheck(true)
     }
 }
+
 ```
 
-Notes:
-- Using lateinit to let the variables be initialized on `@Before` and avoid using ? or !! all over the tests.
+# Notes
+- Using `lateinit` to let the variables be initialized on `@Before` and avoid using `?` or `!!` all over the tests.
 - `SettingsView` and `Settings` are mocked using `MockitoAnnotations`
