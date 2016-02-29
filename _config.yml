@@ -2,7 +2,7 @@ title: MakinGIANTS
 description: Compilation of projects and code made for fun!
 
 url: http://www.makingiants.com
-baseurl: "/blog"
+baseurl: ""
 paginate_path: "page:num/"
 permalink: :title/
 

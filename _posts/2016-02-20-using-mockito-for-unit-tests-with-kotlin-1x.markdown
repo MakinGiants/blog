@@ -1,7 +1,7 @@
 ---
 title: Using Mockito for unit testing with Kotlin (1/x)
 layout: post
-categories: Android Programming
+categories: Android
 ---
 
 Dependencies:
