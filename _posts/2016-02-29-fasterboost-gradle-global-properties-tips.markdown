@@ -1,5 +1,5 @@
 ---
-title: faster/boost gradle global properties tips
+title: fast gradle (boost) builds with global properties file
 layout: post
 categories: Android, Gradle
 ---
