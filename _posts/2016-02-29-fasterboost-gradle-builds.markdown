@@ -1,8 +1,10 @@
 ---
-title: fast gradle (boost) builds with global properties file
+title: faster/boost gradle builds (1/2) - enjoy multiprocess
 layout: post
 categories: Android, Gradle
 ---
+
+Check if you want to know more tips check [faster/boost gradle builds (2/2) - enjoy local cache]({{site.baseurl}}{% post_url 2016-02-29-fasterboost-gradle-builds_2 %})
 
 You can create a file `~/.gradle/gradle.properties` and then all your projects will use those settings for builds.
 
