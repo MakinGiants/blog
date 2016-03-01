@@ -10,7 +10,7 @@ The idea is to have a "local" squid proxy so gradle dont have to go to get every
 
 I will not include a tutorial about how to install docker on mac, but its really easy :P.
 
-1. Install (Docker hub squid)[https://hub.docker.com/r/sameersbn/squid]. thanks to sameersbn :)
+1. Install [Docker hub squid](https://hub.docker.com/r/sameersbn/squid). thanks to sameersbn :)
 1. Create a file `~/.gradle/gradle.properties` with the proxy settings and then all your projects will use those settings for builds.
 
 {% gist /danielgomezrico/f69a4bef505a3717ee88 %}
