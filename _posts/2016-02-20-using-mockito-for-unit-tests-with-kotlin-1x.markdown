@@ -25,7 +25,7 @@ dependencies {
 
 # Little Notes
 * All the functions AND PROPERTIES should be open, by default functions and properties are final and mockito cant mock them.
-* **DONT USE** spy functions make tests fail bc of some weird crash *(if someone had use them right comment!!)*.
+* If you want to use `spy` you should use [mockito-kt](https://github.com/paslavsky/mockito-kt).
 
 # Example
 
