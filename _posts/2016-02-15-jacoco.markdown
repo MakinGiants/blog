@@ -1,0 +1,34 @@
+---
+title: Jacoco test coverage gradle setup for junit, connected test, etc... 
+layout: post
+date: 2016-02-15
+categories: Android, Gradle
+---
+
+1. Just need to copy the next file on your `app/` or the module that you want to have the coverage:
+
+{% gist danielgomezrico/36609a2204cc2f4e1201 %}
+
+1. Apply the plugin:
+
+{% highlight groovy %}
+
+apply from: "jacoco.gradle"
+
+{% endhighlight %}
+
+1. Run the tests you want (check reporting group on gradle tasks for available ones), in my case I have `release` buildType
+   and `mocked` so I have:
+
+{% highlight bash %}
+
+$ ./gradlew testMockedReleaseUnitTestCoverage
+
+{% endhighlight %}
+
+1. Then find the results on `build/reports/jacoco/`
+
+
+# Thanks to 
+
+Again thanks to  [Quality matters](https://github.com/artem-zinnatullin/qualitymatters) project for that dedication.
