@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-compass'
 gem 'jekyll-gist'
+gem 'jekyll-paginate'
 gem 'emoji_for_jekyll'
-gem 'susy'
-gem 'normalize-scss'
+gem 'pygments.rb'
 gem 'redcarpet'
-gem 'compass'
