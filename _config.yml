@@ -10,6 +10,7 @@ paginate:         10
 title:            MakinGIANTS
 tagline:          'MakinGIANTS'
 description:      'Blog'
+mainurl:          http://www.makingiants.com
 url:              http://blog.makingiants.com
 baseurl:          /
 
