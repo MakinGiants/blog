@@ -11,8 +11,8 @@ title:            MakinGIANTS
 tagline:          'MakinGIANTS'
 description:      'Blog'
 mainurl:          http://www.makingiants.com
-url:              http://blog.makingiants.com
-baseurl:          /
+url:              http://www.makingiants.com
+baseurl:          /blog
 
 author:
   name:           'Daniel Gomez Rico'
