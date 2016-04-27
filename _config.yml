@@ -28,3 +28,5 @@ gems:
  - emoji_for_jekyll
  - jekyll-paginate
  - jekyll-gist
+ - rouge
+ - redcarpet
