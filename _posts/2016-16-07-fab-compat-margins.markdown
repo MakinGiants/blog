@@ -1,7 +1,7 @@
 ---
 title: How to display FAB with right margins on all devices
 layout: post
-date: 2016-16-07 11:37:00 UTC
+date: 2016-07-16 11:37:00 UTC
 categories: Android, MaterialDesign
 ---
 
