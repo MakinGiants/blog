@@ -1,0 +1,9 @@
+---
+title: Make UITextField text to contain only numbers
+layout: post
+date: 2012-11-14 23:49:00 UTC
+updated: 2015-02-08 19:42:31 UTC
+comments: false
+categories: IOS
+---
+<br /><ol><li>Implement UITextFieldDelegate in your viewcontroller.</li><li>Add the next method to .m of your viewcontroller:</li></ol><ol>  <pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string  <br /> {  <br />   NSCharacterSet *nonNumberSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet];  <br />       return ([string stringByTrimmingCharactersInSet:nonNumberSet].length &gt; 0);  <br /> }  <br /></code></pre><br /><li>From GUI Designer select the delegate of your UITextField your viewcontroller or do it progamatically:</li></ol><ol> <pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> uiTextField.delegate = self;  </code></pre></ol><a href="http://stackoverflow.com/questions/342181/whats-the-best-way-to-validate-currency-input-in-uitextfield">Source</a>

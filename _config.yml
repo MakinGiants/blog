@@ -1,0 +1,65 @@
+# Build settings
+gems:
+  - jekyll-paginate
+  - emoji_for_jekyll
+  - jekyll-paginate
+  - jekyll-gist
+  - rouge
+
+# Site settings
+title: "MakinGIANTS"
+description: > # this means to ignore newlines until "email:"
+   The findings records and tips of an Android-iOS-TheWholeShabang developer
+
+email: danielgomezrico@mail.com
+#blog logo
+logo: "/assets/images/df_logo.png"
+# blog cover
+cover: "/assets/images/header.jpg"
+
+name: 'Daniel Gomez Rico'
+author: 'Daniel Gomez Rico'
+author_image: "/assets/images/author.webp"
+
+permalink: :title/
+paginate:	5
+
+url: "http://blog.makingiants.com" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@dgomezri'
+
+#fill in disqus shortname to use disqus
+disqus: makingiants
+
+google_analytics: UA-36813115-3
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/dgomezri
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: "?text="
+    share_link: "&amp;url="
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/makingiants
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	google-plus
+    url:	https://plus.google.com/+danielgomezrico
+    desc:	Add me on google+
+    share_url:
+    share_title:
+    share_link:

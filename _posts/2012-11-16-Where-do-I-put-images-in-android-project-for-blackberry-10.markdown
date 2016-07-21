@@ -1,0 +1,9 @@
+---
+title: Where do I put images in android project for blackberry 10
+layout: post
+date: 2012-11-16 21:56:00 UTC
+updated: 2015-02-08 19:42:30 UTC
+comments: false
+categories: Blackberry Android Port
+---
+<span style="background-color: whitesmoke; color: #333333; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 18px;">For&nbsp;</span><a class="twitter-hashtag pretty-link js-nav" data-query-source="hashtag_click" dir="ltr" href="https://twitter.com/search?q=%23BlackBerry10&amp;src=hash" style="background-color: whitesmoke; color: #1f98c7; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 18px; text-decoration: initial;"><s style="color: #78c1dd; text-decoration: initial;">#</s><b style="color: inherit; font-weight: normal;">BlackBerry10</b></a><span style="background-color: whitesmoke; color: #333333; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 18px;">&nbsp;use the drawable-xhdpi folder (114x114px), for&nbsp;</span><a class="twitter-hashtag pretty-link js-nav" data-query-source="hashtag_click" dir="ltr" href="https://twitter.com/search?q=%23PlayBook&amp;src=hash" style="background-color: whitesmoke; color: #1f98c7; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 18px; text-decoration: initial;"><s style="color: #78c1dd; text-decoration: initial;">#</s><b style="color: inherit; font-weight: normal;">PlayBook</b></a><span style="background-color: whitesmoke; color: #333333; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 18px;">&nbsp;use the drawable-hdpi&nbsp;folder (86x86px)&nbsp;^JD</span><br /><span style="background-color: whitesmoke; color: #333333; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 18px;"><br /></span>thats all :P

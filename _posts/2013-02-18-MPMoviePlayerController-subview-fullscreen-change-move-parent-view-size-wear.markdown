@@ -1,0 +1,9 @@
+---
+title: MPMoviePlayerController subview fullscreen change-move parent view size wear
+layout: post
+date: 2013-02-18 21:09:00 UTC
+updated: 2015-02-08 19:42:29 UTC
+comments: false
+categories: IOS
+---
+Add this into shouldAutorotateToInterfaceOrientation method:<br /><br /><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> [UIApplication sharedApplication].statusBarHidden = NO;  <br /></code></pre><br />And this to&nbsp;<span style="background-color: #f0f0f0; font-family: arial; font-size: 12px; line-height: 20px;">&nbsp;willRotateToInterfaceOrientation</span>&nbsp;:<br /><br /><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">   [self.navigationController setNavigationBarHidden:YES animated:YES];  <br />   [self.navigationController setNavigationBarHidden:NO animated:YES];  <br /></code></pre><br /><a href="http://stackoverflow.com/questions/7176211/disappearing-status-bar-at-the-top-after-mpmovieplayercontroller-is-closed">Source</a><br /><br /><a href="http://stackoverflow.com/questions/5188388/going-out-of-movie-player-fullscreen-causes-the-navigationcontrollers-navigatio">Source 2</a><br /><br /><a href="http://stackoverflow.com/a/8857045">Source 3</a>

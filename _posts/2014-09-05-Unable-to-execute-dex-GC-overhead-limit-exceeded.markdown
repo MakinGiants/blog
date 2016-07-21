@@ -1,0 +1,9 @@
+---
+title: Unable to execute dex GC overhead limit exceeded
+layout: post
+date: 2014-09-05 03:31:00 UTC
+updated: 2015-02-08 19:42:28 UTC
+comments: false
+categories: Eclipse IDE
+---
+<h3>Problem</h3>I was trying to build some Android app in Eclipse Luna and "Unable to execute dex: GC overhead limit exceeded.<br /><br /><h3>Solution</h3><div>Edit eclipse.ini file in Eclipse.app/Contents/MacOS/eclipse.ini and edit the red lines using the values that are shown:</div><div><br /><pre style="background: rgb(240, 240, 240); border: 1px dashed rgb(204, 204, 204); font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> -startup  <br /> ../../../plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar  <br /> --launcher.library  <br /> ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326  <br /> -product  <br /> org.eclipse.epp.package.standard.product  <br /> --launcher.defaultAction  <br /> openFile  <br /> -showsplash  <br /> org.eclipse.platform  <br /> --launcher.XXMaxPermSize  <br /> 256m  <br /> --launcher.defaultAction  <br /> openFile  <br /> --launcher.appendVmargs  <br /> -vmargs  <br /> -Dosgi.requiredJavaVersion=1.7  <br /> -XstartOnFirstThread  <br /> -Dorg.eclipse.swt.internal.carbon.smallFonts  <br /> -XX:MaxPermSize=256m  <br /> eclipse.ini  <br /></code><code style="word-wrap: normal;"><span style="color: red;"><b> -Xms512m  <br /> -Xmx1024m  </b></span></code><code style="color: black; word-wrap: normal;"><br /> -Xdock:icon=../Resources/Eclipse.icns  <br /> -XstartOnFirstThread  <br /> -Dorg.eclipse.swt.internal.carbon.smallFonts   <br /></code></pre><br /><div><a href="http://blog.simplyadvanced.net/unable-to-execute-dex-gc-overhead-limit-exceeded/">Source</a></div><br /></div>

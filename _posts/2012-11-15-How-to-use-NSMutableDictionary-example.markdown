@@ -1,0 +1,9 @@
+---
+title: How to use NSMutableDictionary example
+layout: post
+date: 2012-11-15 00:15:00 UTC
+updated: 2015-02-08 19:42:31 UTC
+comments: false
+categories: IOS
+---
+Example:  <br /><br /><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];  <br /> [dict setObject:@"John" forKey:@"Firstname"];  <br /> [dict setObject:@"Doe" forKey:@"Lastname"];  <br /> [dict setObject:@"info at objectgraph.com" forKey:@"Email"]; &nbsp;</code></pre><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"><br /> NSLog(@"%@", dict); &nbsp;</code></pre><pre style="background-image: URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif); background: #f0f0f0; border: 1px dashed #CCCCCC; color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"><br /> // Print each key and value  <br /> NSArray *keys = [dict allKeys];  <br /> for (NSString *key in keys) {  <br />    NSLog(@"%@ is %@",key, [dict objectForKey:key]);  <br /> }  <br /></code></pre>

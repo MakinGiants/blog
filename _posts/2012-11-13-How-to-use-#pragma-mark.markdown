@@ -1,0 +1,9 @@
+---
+title: How to use #pragma mark
+layout: post
+date: 2012-11-13 21:54:00 UTC
+updated: 2015-02-08 19:42:31 UTC
+comments: false
+categories: IOS
+---
+This reserved word is used to group methods/functions, to see them organized in xcode method list.<br /><br />If you add a '-' character in the mark a bar will apear in xcode method list<br /><blockquote>#pragma mark -</blockquote><br /><br /><br /><span style="font-weight: bold;">Example:</span><br /><br /><pre style="background: none repeat scroll 0% 0% rgb(240, 240, 240); border: 1px dashed rgb(204, 204, 204); color: black; font-family: arial; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> #pragma mark -  <br /> #pragma mark Initialization  <br /> -(...)initWithStyle:...  <br /> #pragma mark -  <br /> #pragma mark Table Managment  <br /> -(...)numberOfSectionInTableView:...  <br /> -(...)tableView:numberOfRowsInSection:..  <br /> ...  <br /> #pragma mark -  <br /> #pragma mark Managing Views  <br /> -(...)viewDidLoad:...  <br /> -(...)viewDidAppear:...  <br /> ...  <br /></code></pre><br />XCode result:<br /><br /><a href="http://iphonedevelopertips.com/wp-content/uploads/2008/09/pragma.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="http://iphonedevelopertips.com/wp-content/uploads/2008/09/pragma.png" style="display: block; height: 358px; margin: 0px auto 10px; text-align: center; width: 344px;" /></a><br /><br /><br /><a href="http://iphonedevelopertips.com/xcode/xcode-4-pragma-mark-shortcut.html">Source</a><br /><br />
