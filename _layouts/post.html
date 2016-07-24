@@ -6,6 +6,9 @@
   <body itemscope itemtype="http://schema.org/Article">
     {% include header.html %}
     <main class="content" role="main">
+      
+      {% include ads_sky_horizontal.html %}
+
       <article class="post">
         {% if page.image %}
         <div class="article-image">
@@ -54,6 +57,9 @@
           {{content}}
         </section>
         <footer class="post-footer">
+          
+          {% include ads_sky_horizontal_2.html %}
+
           <section class="share">
             {% for social in site.social %}
               {% if social.share_url != null %}
