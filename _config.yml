@@ -5,6 +5,8 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - rouge
+  - jekyll-sitemap
+
 
 # Site settings
 title: "MakinGIANTS"

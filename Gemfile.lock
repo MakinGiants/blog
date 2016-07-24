@@ -132,6 +132,7 @@ DEPENDENCIES
   github-pages
   jekyll-gist
   jekyll-paginate
+  jekyll-sitemap
   jemoji
   rouge
 
