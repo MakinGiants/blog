@@ -36,6 +36,10 @@ disqus: makingiants
 
 google_analytics: UA-36813115-3
 
+# Variables to link images
+path-article-images: /assets/article_images
+path-emoji-hmm: /assets/article_images/hmm.jpg
+
 # social icons and sharing options
 social:
   - icon:	twitter
@@ -65,3 +69,4 @@ social:
     share_url:
     share_title:
     share_link:
+
