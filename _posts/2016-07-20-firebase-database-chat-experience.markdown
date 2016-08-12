@@ -46,8 +46,8 @@ _Note: we used some extensions to make Firebase calls and zip all the results in
 1. To show the items you can use `FirebaseRecyclerAdapter` from `Firebase Database UI` package, check [Full post gist](https://gist.github.com/danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3) for a sample.
 
 # Thanks
-- [Barista Ventures](barista-v.com) for the support and experiences.
-- [Oscar Rendon](https://twitter.com/orendon) for all the help in making this work.
+
+[Barista Ventures](barista-v.com) and [Oscar Rendon](https://twitter.com/orendon) for the support and help.
 
 # Guides
 - [How to Structure Data][1]
