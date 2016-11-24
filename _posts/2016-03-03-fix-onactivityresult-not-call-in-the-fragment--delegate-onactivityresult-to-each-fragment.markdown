@@ -6,6 +6,6 @@ categories: Android
 
 Get the list of fragment and call each one with the parameters :P
 
-{% gist /danielgomezrico/969c21021628d3ffb466 %}
+{% gist /caipivara/969c21021628d3ffb466 %}
 
 Thanks to [Stackoverflow Jared Rummler and ruX](http://stackoverflow.com/a/22685084/273119)
