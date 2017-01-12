@@ -9,6 +9,8 @@
       
       {% include ads_sky_horizontal.html %}
 
+      {% include ads_sky_horizontal_3.html %}
+
       <article class="post">
         {% if page.image %}
         <div class="article-image">
@@ -57,9 +59,6 @@
           {{content}}
         </section>
         <footer class="post-footer">
-          
-          {% include ads_sky_horizontal_2.html %}
-
           <section class="share">
             {% for social in site.social %}
               {% if social.share_url != null %}
@@ -70,6 +69,9 @@
               {% endif %}
             {% endfor %}
           </section>
+
+          {% include ads_sky_horizontal_2.html %}
+
         </footer>
         <div class="bottom-teaser cf">
           <div class="isLeft">
