@@ -10,7 +10,7 @@ Using [@JvmOverloads][0] tag helps to avoid multiple constructors with Kotlin
 
 It's really possible that you had some code like:
 
-{% gist danielgomezrico/e51337945d9277e6c5ad95e1abe33daf with-problem.kt %}
+{% gist caipivara/e51337945d9277e6c5ad95e1abe33daf with-problem.kt %}
 
 As you can see there are all the constructors needed for a _custom_ `FrameLayout` but all with same "body".
 
@@ -20,7 +20,7 @@ As you can see there are all the constructors needed for a _custom_ `FrameLayout
 
 Refactored with `@JvmOverloads`:
 
-{% gist danielgomezrico/e51337945d9277e6c5ad95e1abe33daf fixed.kt %}
+{% gist caipivara/e51337945d9277e6c5ad95e1abe33daf fixed.kt %}
 
 ## Thanks to
 

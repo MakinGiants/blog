@@ -13,7 +13,7 @@ _Channel: 1-1 chat_
 
 # Dependencies
 
-{% gist danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 deps.gralde %}
+{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 deps.gralde %}
 
 _Note: Firebase DB UI is really cool and simple to list Firebase database objects and queries, check it out_
 
@@ -23,18 +23,18 @@ _Note: Firebase DB UI is really cool and simple to list Firebase database object
 
 [Firebase Realtime Database][0] use _JSON_ to define the database structure (yeah, at the end it will be a **BIG** _JSON_). So our database will look like:
 
-{% gist danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 database.json %}
+{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 database.json %}
 
 Check [Structure Data Guide][1]
 
 ## Database usage
 We can query messages, channels and push messages into a channel with the next code:
 
-{% gist danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 MyFirebaseDatabase.kt %}
+{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 MyFirebaseDatabase.kt %}
 
 _Note: we used some extensions to make Firebase calls and zip all the results in a easy way (may be better to use Firebase transactions instead but I didnt tested at the moment)_
 
-{% gist danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 FirebaseExtensions.kt %}
+{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 FirebaseExtensions.kt %}
 
 ### Notes
 
@@ -43,7 +43,7 @@ _Note: we used some extensions to make Firebase calls and zip all the results in
 1. Because the database is a _JSON_, `FirebaseDatabase.getInstance().reference.child("messages")`,  will get a `DatabaseReference` for all the messages **but as the direct child of messages is an _id_** (remember note 1.), you should use `.orderByChild("channelId")` and `.equalTo("channelIdValue")` to get all the children inside _messages_ that have `channelId == "channelIdValue"` (query by _children_ of _children_ attributes)
 1. Databases are created with _just users authenticated with firebase auth_
  _read/write_ permissions, but you can make it public for read/write too, **it's ultra insecure, please dont**. 
-1. To show the items you can use `FirebaseRecyclerAdapter` from `Firebase Database UI` package, check [Full post gist](https://gist.github.com/danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3) for a sample.
+1. To show the items you can use `FirebaseRecyclerAdapter` from `Firebase Database UI` package, check [Full post gist](https://gist.github.com/caipivara/0f870979de12cfaa880c03d9ca9e7ea3) for a sample.
 
 # Thanks
 
