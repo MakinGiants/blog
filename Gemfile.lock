@@ -132,9 +132,10 @@ DEPENDENCIES
   github-pages
   jekyll-gist
   jekyll-paginate
+  jekyll-seo-tag
   jekyll-sitemap
   jemoji
   rouge
 
 BUNDLED WITH
-   1.12.5
+   1.13.7
