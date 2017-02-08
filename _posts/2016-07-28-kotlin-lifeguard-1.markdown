@@ -2,6 +2,8 @@
 title: KotlinLifeguard "#1
 layout: post
 categories: Android, Kotlin
+author:
+  twitter: aquicaipivara
 ---
 
 Using [@JvmOverloads][0] tag helps to avoid multiple constructors with Kotlin

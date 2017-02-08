@@ -2,6 +2,8 @@
 title: How to Use OneSignal for Push Notifications
 layout: post
 categories: Android, OneSignal, PushNotifications
+author:
+  twitter: aquicaipivara
 ---
 
 [OneSignal](https://onesignal.com/) offer Push Notification as a service, an Android SDK and a Public API.

@@ -2,6 +2,7 @@
 title: How to wait for RxJava calls in espresso tests
 layout: post
 categories: Android, Testing
+author: caipivara
 ---
 
 Since Espresso will wait for AsyncTask to finish, we can take advantage of this 
