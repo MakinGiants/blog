@@ -32,7 +32,7 @@ We can query messages, channels and push messages into a channel with the next c
 
 {% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 MyFirebaseDatabase.kt %}
 
-_Note: we used some extensions to make Firebase calls and zip all the results in a easy way (may be better to use Firebase transactions instead but I didnt tested at the moment)_
+_Note: we used some extensions to make Firebase calls and zip all the results in a easy way (will be better to use Firebase transactions instead ?)_
 
 {% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 FirebaseExtensions.kt %}
 
