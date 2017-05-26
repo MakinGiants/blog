@@ -1,7 +1,7 @@
 ---
-title: Setup your own CI server with Gitlab-CI for Android
+title: Local Gitlab-CI server for Android Cheatsheet
 layout: post
-categories: Android, CI
+categories: Android CI
 author: caipivara
 ---
 

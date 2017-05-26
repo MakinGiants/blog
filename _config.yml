@@ -11,24 +11,27 @@ gems:
 
 # Site settings
 title: "MakinGIANTS"
-description: > # this means to ignore newlines until "email:"
-   The findings and tips records of an Android-iOS-TheWholeShabang group
+description: The findings and tips records of an Android-iOS-TheWholeShabang group
+
+logo: "assets/images/df_logo.png" #blog logo
+cover: "assets/images/header.jpg"
+# Variables to link images
+path-article-images: "assets/article_images"
+path-emoji-hmm: "assets/article_images/hmm.jpg"
+path-emoji-tada: "assets/article_images/tada.jpg"
+
 
 email: danielgomezrico@mail.com
-#blog logo
-logo: "/assets/images/df_logo.png"
-# blog cover
-cover: "/assets/images/header.jpg"
-
 name: 'Daniel Gomez Rico'
 author: 'Daniel Gomez Rico'
-author_image: "/assets/images/author.webp"
+author_image: "assets/images/author.webp"
 
-permalink: :title/
+permalink: ":title/"
 paginate:	5
 
 url: "http://makingiants.github.io" # the base hostname & protocol for your site
-baseurl: "blog"
+baseurl: "/blog"
+
 #used to display twitter cards
 twitter_handle: '@aquicaipivara'
 
@@ -37,10 +40,6 @@ disqus: makingiants
 
 google_analytics: UA-36813115-3
 
-# Variables to link images
-path-article-images: /assets/article_images
-path-emoji-hmm: /assets/article_images/hmm.jpg
-path-emoji-tada: /assets/article_images/tada.jpg
 
 # social icons and sharing options
 social:
