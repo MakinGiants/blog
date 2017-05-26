@@ -27,10 +27,10 @@ author_image: "/assets/images/author.webp"
 permalink: :title/
 paginate:	5
 
-url: "http://blog.makingiants.com" # the base hostname & protocol for your site
-baseurl: ""
+url: "http://makingiants.github.io" # the base hostname & protocol for your site
+baseurl: "blog"
 #used to display twitter cards
-twitter_handle: '@dgomezri'
+twitter_handle: '@aquicaipivara'
 
 #fill in disqus shortname to use disqus
 disqus: makingiants
@@ -45,7 +45,7 @@ path-emoji-tada: /assets/article_images/tada.jpg
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/dgomezri
+    url:	https://twitter.com/aquicaipivara
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: "?text="
