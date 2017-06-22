@@ -56,7 +56,7 @@ I found this issues that are common between any CI server:
 - [How to setup your gitlab runner guide][0]
 - [How to setup gitlab for android projects][1]
 
-[0] : http://docs.gitlab.com/runner/register/
-[1] : https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/
+[0]: http://docs.gitlab.com/runner/register/
+[1]: https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/
 
 Now enjoy a happy android dev :)
