@@ -43,6 +43,7 @@ I found this issues that are common between any CI server:
 - Copy every env/secret variable into `gradle.propertes` file inside the project (gmaps key or something like that)
 {% gist caipivara/33d35da315cedf795e01f168e8525e1d cp-env-to-properties.sh %}
 
+_NOTE: you can use `System.getenv("VAR_NAME")` in your gradle files if you dont need a local `.properties` file for your project. (thanks to [reddit/Atraac](https://www.reddit.com/user/Atraac))_
 
 ## Gitlab-ci Advantages:
 - "Free" testing farm (your own devices, maybe uncle/grandmother/mom old devices).
