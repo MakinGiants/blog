@@ -13,24 +13,24 @@ gems:
 title: "MakinGIANTS"
 description: The findings and tips records of an Android-iOS-TheWholeShabang group
 
-logo: "assets/images/df_logo.png" #blog logo
-cover: "assets/images/header.jpg"
-# Variables to link images
-path-article-images: "assets/article_images"
-path-emoji-hmm: "assets/article_images/hmm.jpg"
-path-emoji-tada: "assets/article_images/tada.jpg"
+logo: "/assets/images/df_logo.png" #blog logo
+cover: "/assets/images/header.jpg"
 
+# Variables to link images
+path-article-images: "/assets/article_images"
+path-emoji-hmm: "/assets/article_images/hmm.jpg"
+path-emoji-tada: "/assets/article_images/tada.jpg"
 
 email: danielgomezrico@mail.com
 name: 'Daniel Gomez Rico'
 author: 'Daniel Gomez Rico'
-author_image: "assets/images/author.webp"
+author_image: "/assets/images/author.webp"
 
 permalink: ":title/"
 paginate:	5
 
-url: "http://makingiants.github.io" # the base hostname & protocol for your site
-baseurl: "/blog"
+url: "http://blog.makingiants.com" # the base hostname & protocol for your site
+baseurl: ""
 
 #used to display twitter cards
 twitter_handle: '@aquicaipivara'
@@ -39,7 +39,6 @@ twitter_handle: '@aquicaipivara'
 disqus: makingiants
 
 google_analytics: UA-36813115-3
-
 
 # social icons and sharing options
 social:
