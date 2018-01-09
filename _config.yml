@@ -30,7 +30,7 @@ permalink: ":title/"
 paginate:	5
 
 url: "http://blog.makingiants.com" # the base hostname & protocol for your site
-baseurl: ""
+#baseurl: ""
 
 #used to display twitter cards
 twitter_handle: '@aquicaipivara'
