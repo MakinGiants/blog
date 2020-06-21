@@ -16,7 +16,7 @@ I found this issues that are common between any CI server:
 
 ## 1. Gitlab will run everything you put in `.gitlab-ci.yml`, check this sample:
 
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d .gitlab-ci.yml %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d .gitlab-ci.yml %}
 
 - I use spoon to run UI tests, update the gradle task in case you use another thing.
 - All scripts in `scripts/` will be explained in **3.** .
@@ -24,24 +24,24 @@ I found this issues that are common between any CI server:
 ## 2. Android project setup:
 
 - Setup code coverage, tests and spoon:
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d build.gradle %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d build.gradle %}
 
 - Setup jacoco tasks to generate code coverage files:
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d jacoco.gradle %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d jacoco.gradle %}
 
 - Setup tests to print each test result (to see in the job results which ones failed)
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d test-setup.gradle %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d test-setup.gradle %}
 
 ## 3. Usefull scripts:
 
 - Install your project dependencies on the machine by terminal:
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d install-android-dependencies.sh %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d install-android-dependencies.sh %}
 
 - Run the same command on every connected device (avoid INSTALL_FAILED_UPDATE_INCOMPATIBLE)
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d adb-all.sh %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d adb-all.sh %}
 
 - Copy every env/secret variable into `gradle.propertes` file inside the project (gmaps key or something like that)
-{% gist caipivara/33d35da315cedf795e01f168e8525e1d cp-env-to-properties.sh %}
+{% gist danielgomezrico/33d35da315cedf795e01f168e8525e1d cp-env-to-properties.sh %}
 
 _NOTE: you can use `System.getenv("VAR_NAME")` in your gradle files if you dont need a local `.properties` file for your project. (thanks to [reddit/Atraac](https://www.reddit.com/user/Atraac))_
 
