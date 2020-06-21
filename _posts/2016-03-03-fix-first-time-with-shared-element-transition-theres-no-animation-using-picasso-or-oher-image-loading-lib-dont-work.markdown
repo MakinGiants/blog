@@ -8,6 +8,6 @@ You need to call `supportPostponeEnterTransition()` on create to wait until `Pic
 
 Using picasso you can do you it using a `Callback` like:
 
-{% gist /caipivara/3687f79328dcf7bfc98c %}
+{% gist /danielgomezrico/3687f79328dcf7bfc98c %}
 
 Thanks to [androiddesignpatterns](http://www.androiddesignpatterns.com/2015/03/activity-postponed-shared-element-transitions-part3b.html)

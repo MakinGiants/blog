@@ -11,7 +11,7 @@ Using [assertj-android](https://github.com/square/assertj-android) but you use  
 
 Example:
 
-{% gist danielgomezrico/df83722e4cf1fe06eb28 %}
+{% gist /danielgomezrico/df83722e4cf1fe06eb28 %}
 
 Any suggestions?
 

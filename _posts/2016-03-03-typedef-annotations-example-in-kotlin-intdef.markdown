@@ -9,4 +9,4 @@ inside a `companion object`.
 
 Check:
 
-{% gist /caipivara/3ac2317c04ee2e60dc50 %}
+{% gist /danielgomezrico/3ac2317c04ee2e60dc50 %}

@@ -7,7 +7,7 @@ categories: Android, Gradle
 
 1. Just need to copy the next file on your `app/` or the module that you want to have the coverage:
 
-{% gist danielgomezrico/36609a2204cc2f4e1201 %}
+{% gist /danielgomezrico/36609a2204cc2f4e1201 %}
 
 1. Apply the plugin:
 

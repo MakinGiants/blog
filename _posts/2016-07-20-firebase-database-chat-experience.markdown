@@ -13,7 +13,7 @@ _Channel: 1-1 chat_
 
 # Dependencies
 
-{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 deps.gralde %}
+{% gist /danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 deps.gralde %}
 
 _Note: Firebase DB UI is really cool and simple to list Firebase database objects and queries, check it out_
 
@@ -23,18 +23,18 @@ _Note: Firebase DB UI is really cool and simple to list Firebase database object
 
 [Firebase Realtime Database][0] use _JSON_ to define the database structure (yeah, at the end it will be a **BIG** _JSON_). So our database will look like:
 
-{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 database.json %}
+{% gist /danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 database.json %}
 
 Check [Structure Data Guide][1]
 
 ## Database usage
 We can query messages, channels and push messages into a channel with the next code:
 
-{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 MyFirebaseDatabase.kt %}
+{% gist /danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 MyFirebaseDatabase.kt %}
 
 _Note: we used some extensions to make Firebase calls and zip all the results in a easy way (will be better to use Firebase transactions instead ?)_
 
-{% gist caipivara/0f870979de12cfaa880c03d9ca9e7ea3 FirebaseExtensions.kt %}
+{% gist /danielgomezrico/0f870979de12cfaa880c03d9ca9e7ea3 FirebaseExtensions.kt %}
 
 ### Notes
 

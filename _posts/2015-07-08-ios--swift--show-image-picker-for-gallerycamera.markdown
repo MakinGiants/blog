@@ -7,6 +7,6 @@ categories: iOS Swift
 
 Sample code:
 
-{% gist danielgomezrico/83707ddf456ad2405e0d %}
+{% gist /danielgomezrico/83707ddf456ad2405e0d %}
 
 Thanks to [The App Guruz](http://www.theappguruz.com/blog/user-interaction-camera-using-uiimagepickercontroller-swift/)

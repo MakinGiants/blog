@@ -12,4 +12,4 @@ recyclerView.setItemDecorator( /*your decorator instance*/ )
 
 You can find some useful decorators here:
 
-{% gist /caipivara/121b116add8fbc3af615 %}
+{% gist /danielgomezrico/121b116add8fbc3af615 %}

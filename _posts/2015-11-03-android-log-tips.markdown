@@ -21,11 +21,11 @@ Timber.e(throwable, "message")
 
 It will print the class name as tag and number with this setup:
 
-{% gist danielgomezrico/a5c8197252b6db17cdd6 %}
+{% gist /danielgomezrico/a5c8197252b6db17cdd6 %}
 
 - Helps in production release, you can set up to send all logs into crashlytics reports so you can see what was happening on users phones in this way:
 
-{% gist danielgomezrico/18268c9963936a4e44f7 %}
+{% gist /danielgomezrico/18268c9963936a4e44f7 %}
 
 # Sources
 

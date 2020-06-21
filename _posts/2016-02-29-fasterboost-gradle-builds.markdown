@@ -13,7 +13,7 @@ My local machine setup:
 - core i5: 4 (4+1 threads will be great for builds)
 - ram: 16 GB 1600 MHz DDR3.
 
-{% gist danielgomezrico/50de23e3fc75f521ada5 %}
+{% gist /danielgomezrico/50de23e3fc75f521ada5 %}
 
 Thanks to [Reddit](https://www.reddit.com/r/java/comments/22rb8z/gradle_build_process_is_painfully_slow/)
 
